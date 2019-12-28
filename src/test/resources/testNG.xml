@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="classes" data-provider-thread-count="3">
+    <test name="TestNG">
+        <classes>
+            <class name="TestNGHelloWorld"/>
+        </classes>
+    </test> <!-- TestNG -->
+</suite> <!-- Default Suite -->
