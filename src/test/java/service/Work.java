@@ -6,7 +6,7 @@ public class Work {
     private static final String corId = "wwa664a53b85c09ea0";
     private static final String corpSecret = "iEOYzbJ48K-7XgCTuj9WdFT6RSOjEgsi2UMiBgZUFmU";
     private static Work work;
-    private static String access_token;
+    private String access_token;
 
     public static Work getInstance() {
         if (work == null) {
@@ -25,6 +25,7 @@ public class Work {
                             .get("https://qyapi.weixin.qq.com/cgi-bin/gettoken")
                     .then().log().all()
                             .extract().body().path("access_token");
+            System.out.println(access_token);
         }
         return access_token;
     }

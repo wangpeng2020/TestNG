@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="classes">
+    <test name="TestNG">
+        <classes>
+            <class name="service.department.testcase.TestDepartment"/>
+            <class name="service.tag.testcase.TestTag"/>
+        </classes>
+    </test> <!-- TestNG -->
+</suite> <!-- Default Suite -->
