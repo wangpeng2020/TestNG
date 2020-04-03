@@ -102,7 +102,7 @@ public class Baidu  {
         given().proxy("127.0.0.1", 8888).
                 queryParam("action","login").
                 formParam("account","pw@arcvideo.com").
-                formParam("password","619451").
+                formParam("password","xxxxxx").
                 when().log().all().
                 post("http://api.stg.danghongyun.com/rest").
                 then().log().all().
